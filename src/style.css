@@ -1,0 +1,9 @@
+header {
+    display: flex;
+}
+
+.header-section {
+    border: 1px black solid;
+    margin: 10px;
+    box-shadow: lightblue 5px 5px;
+}
