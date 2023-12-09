@@ -4,30 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
 <script defer src="main.bundle.js"></script></head>
 <body>
-    <header>
-        <div class="jum-intro header-section">
-            <img src="./images/jum-large.JPG" alt="Jum Ryan">
-            <h1>Jum Ryan</h1>
+    <div class="container">
+        <header>
+            <div class="jum-intro">
+                <picture>
+                    <source srcset="./images/jum-large.jpg" media="(min-width: 1000px)">
+                    <source srcset="./images/jum-crop-480.jpg" media="(min-width: 600px)" />
+                    
+                    <img class='jum-picture' src="./images/jum-crop.jpg" alt="Jum Ryan">
+                </picture>
+                <h1>Jum Ryan</h1>
+            </div>
+            <div class="about-section">
+                <h2>About Me</h2>
+                <p>
+                    Well, hello there.  What would make a teacher/brewer/musician decide to have a go at the world of software development?
+                    
+                </p>
+            </div>
+        </header>
+        <div class="my-work">
+            <h2>Software Development</h2>
+            <p>this is a test</p>
+            <i class="devicon-github-original-wordmark"></i>
         </div>
-        <div class="about-section header-section">
-            <h2>About Me</h2>
-            <p>
-                Well, hello there.  What would make a teacher/brewer/musician decide to have a go at the world of software development?
-                
-            </p>
+        <div class="contact-me">
+            <h2>Contact Me</h2>
+            <p>Please get in touch if you'd like to discuss your project.</p>
+            <p>jumryan@zoho.com</p>
         </div>
-    </header>
-    
-    <h2>Software Development</h2>
-    <p>this is a test</p>
+    </div>
 
-    <i class="devicon-github-original-wordmark"></i>
+
+    
           
-    <script src="./index.bundle.js"></script>
+    
 </body>
 </html>
