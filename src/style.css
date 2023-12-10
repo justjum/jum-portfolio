@@ -9,63 +9,115 @@
 }
 
 body {
-    background: linear-gradient(to right top, steelblue, white) no-repeat;
+    background: linear-gradient(170deg, rgb(133, 216, 212) 40%, white 20%) no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
     font-size: larger;
+    border: 0;
+    margin: 0;
+    
+}
+
+main {
+    padding: 20px;
+    max-width: 1500px;
+}
+
+.jum-intro {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.title-image {
+    position: relative;
+}
+
+.about-section {
+    max-height: 300px;
+    max-width: 600px;
+    padding: 10px;
+    box-shadow: lightgray 3px 3px 6px;
+    background-color: white;
+}
+
+
+h1 {
+    position: absolute;
+    left: 5px;
+    font-family: purisa;
+    font-size: 2.5rem;
+    font-weight:900;
+    color: rgb(255, 255, 255);
+    
+}
+
+p {
+
+}
+
+.jum-picture {
+    max-width: 600px;
+    object-fit: cover;
+
 }
 
 .container {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 1%;
-    margin-right: 1%;
+    padding: 30px;
 }
 
-header {
+footer {
+    background-color: rgb(133, 216, 212);
+    margin-top: auto;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-}
-
-.jum-intro {
-    border: 1px solid steelblue;
-    margin: 10px;
-    position: relative;
-}
-
-.about-section {
-    border: 1px solid steelblue;
-    max-height: 600px;
-    margin: 10px;
-    padding: 5px;
-    box-shadow: rgb(182, 194, 204) 5px 5px;
-}
-
-h1 {
-    position: absolute;
-    bottom: 0.5rem;
-    right: 3rem;
-    font-family: purisa;
-    font-size: 2.5rem;
-    font-weight: 100;
-}
-
-.jum-picture {
-    max-width: 1200px;
-    object-fit: contain;
 }
 
 .contact-me {
-    background-color: blanchedalmond;
-    bottom: 0;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    .jum-intro {
+        display: block;
+    }
+    .jum-picture {
+        max-width: 400px;
+        float: left;
+        margin: -150px 15px -5px -150px;
+        z-index: 5;
+    }
+
+    .about-section {
+        max-width: 600px;
+        max-height: 1000px;
+    }
 }
 
 @media (max-width: 600px){
     .jum-picture {
         max-width: 90%;
     }
+
     h1 {
         bottom: 0.5rem;
+    }
+    
+    .about-section {
+        max-width: 600px;
+        max-height: 1000px;
     }
 }
