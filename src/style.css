@@ -126,6 +126,10 @@ i {
     background-color: white;
 }
 
+h3 {
+    text-align: center;
+}
+
 .project-image {
     width: 200px;
     height: 200px;
