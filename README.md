@@ -15,3 +15,4 @@
 - Browse my collection of projects completed whilst studying The Odin Projects Javascript stream.
 
 ## Credits
+- [DEV Icons](https://devicon.dev/)
